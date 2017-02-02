@@ -1,0 +1,6 @@
+# Composer files
+composer.phar
+/vendor/
+
+# Logfiles
+t3census-worker-detector.log

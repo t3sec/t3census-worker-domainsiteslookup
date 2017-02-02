@@ -1,0 +1,438 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "821108cc683fa216d5c4ca17b6111f04",
+    "content-hash": "939cea3cab0f81ebb86b9c50213fa11f",
+    "packages": [
+        {
+            "name": "graylog2/gelf-php",
+            "version": "1.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bzikarsky/gelf-php.git",
+                "reference": "0cb872928246bada1b6a5f504a7c3589f1c1174d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bzikarsky/gelf-php/zipball/0cb872928246bada1b6a5f504a7c3589f1c1174d",
+                "reference": "0cb872928246bada1b6a5f504a7c3589f1c1174d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gelf\\": "src/Gelf"
+                },
+                "files": [
+                    "src/check_technical_requirements.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Zikarsky",
+                    "email": "benjamin@zikarsky.de"
+                },
+                {
+                    "name": "gelf-php contributors",
+                    "homepage": "https://github.com/bzikarsky/gelf-php/contributors"
+                }
+            ],
+            "description": "A php implementation to send log-messages to a GELF compatible backend like Graylog2.",
+            "time": "2016-11-21 13:31:39"
+        },
+        {
+            "name": "jeremykendall/php-domain-parser",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremykendall/php-domain-parser.git",
+                "reference": "1bff611986695be31959ca4257259f702afa0b85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremykendall/php-domain-parser/zipball/1bff611986695be31959ca4257259f702afa0b85",
+                "reference": "1bff611986695be31959ca4257259f702afa0b85",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.2.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "bin": [
+                "bin/parse",
+                "bin/pdp-psl"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pdp\\": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Kendall",
+                    "homepage": "http://about.me/jeremykendall",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Public Suffix List based URL parsing implemented in PHP.",
+            "keywords": [
+                "Public Suffix List",
+                "domain parsing",
+                "url parsing"
+            ],
+            "time": "2014-06-10 15:10:40"
+        },
+        {
+            "name": "jwage/purl",
+            "version": "v0.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jwage/purl.git",
+                "reference": "1242069b4d900f176ae7339700d4af5b556b25bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jwage/purl/zipball/1242069b4d900f176ae7339700d4af5b556b25bf",
+                "reference": "1242069b4d900f176ae7339700d4af5b556b25bf",
+                "shasum": ""
+            },
+            "require": {
+                "jeremykendall/php-domain-parser": "1.3.1",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Purl": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan H. Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "URL Manipulation for PHP 5.3",
+            "homepage": "http://github.com/jwage/purl",
+            "keywords": [
+                "manipulation",
+                "url"
+            ],
+            "time": "2016-03-05 16:40:31"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bad29cb8d18ab0315e6c477751418a82c850d558",
+                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "~5.3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2016-11-26 00:15:39"
+        },
+        {
+            "name": "necromant2005/gearman-stats",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/necromant2005/gearman-stats.git",
+                "reference": "39d49ed5b0d4652a85064f7c9dd32dc16e92f6ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/necromant2005/gearman-stats/zipball/39d49ed5b0d4652a85064f7c9dd32dc16e92f6ae",
+                "reference": "39d49ed5b0d4652a85064f7c9dd32dc16e92f6ae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "TweeGearmanStat": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rostislav Mykhajliw",
+                    "email": "necromant2005@gmail.com",
+                    "homepage": "https://github.com/necromant2005",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Geaman connector for getting status and statistic data",
+            "homepage": "https://github.com/necromant2005/gearman-stats.git",
+            "keywords": [
+                "gearman",
+                "statistatic"
+            ],
+            "time": "2015-11-12 05:18:32"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "t3sec/bingscraper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3sec/php-library-scraper-bing.git",
+                "reference": "79f5ee7b2aa97e6181ff419220dcdae22e6837c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t3sec/php-library-scraper-bing/zipball/79f5ee7b2aa97e6181ff419220dcdae22e6837c5",
+                "reference": "79f5ee7b2aa97e6181ff419220dcdae22e6837c5",
+                "shasum": ""
+            },
+            "require": {
+                "jwage/purl": "0.0.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "T3sec\\BingScraper\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Krause",
+                    "email": "marcus#exp2017@t3sec.info"
+                }
+            ],
+            "description": "PHP scraping library",
+            "homepage": "https://github.com/t3sec/php-library-scraper-bing",
+            "keywords": [
+                "bing",
+                "scraper"
+            ],
+            "support": {
+                "source": "https://github.com/t3sec/php-library-scraper-bing/tree/master",
+                "issues": "https://github.com/t3sec/php-library-scraper-bing/issues"
+            },
+            "time": "2017-02-01 21:32:17"
+        },
+        {
+            "name": "t3sec/urlhelper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3sec/php-library-helper-url.git",
+                "reference": "300767e1b3415e8c95ca3e2bee542b65fafa0f33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t3sec/php-library-helper-url/zipball/300767e1b3415e8c95ca3e2bee542b65fafa0f33",
+                "reference": "300767e1b3415e8c95ca3e2bee542b65fafa0f33",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "T3sec\\Url\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Krause",
+                    "email": "marcus#exp2017@t3sec.info"
+                }
+            ],
+            "description": "PHP  URL helper library",
+            "homepage": "https://github.com/t3sec/php-library-helper-url",
+            "keywords": [
+                "download",
+                "http",
+                "url"
+            ],
+            "support": {
+                "source": "https://github.com/t3sec/php-library-helper-url/tree/master",
+                "issues": "https://github.com/t3sec/php-library-helper-url/issues"
+            },
+            "time": "2017-02-01 21:15:17"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [
+        {
+            "alias": "0.0.1",
+            "alias_normalized": "0.0.1.0",
+            "version": "9999999-dev",
+            "package": "t3sec/urlhelper"
+        },
+        {
+            "alias": "0.0.1",
+            "alias_normalized": "0.0.1.0",
+            "version": "9999999-dev",
+            "package": "t3sec/bingscraper"
+        }
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "t3sec/urlhelper": 20,
+        "t3sec/bingscraper": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
