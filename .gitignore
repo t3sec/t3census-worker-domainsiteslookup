@@ -3,4 +3,4 @@ composer.phar
 /vendor/
 
 # Logfiles
-t3census-worker-detector.log
+t3census-worker-domainsiteslookup.log
