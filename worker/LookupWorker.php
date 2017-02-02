@@ -46,9 +46,7 @@ while (1) {
 function fetchSites(GearmanJob $job) {
 	global $logger;
 
-	$result = FALSE;
 	$domain = $job->workload();
-	
 	$logger->addDebug('Processing domain', array('domain' => $domain));
 
 	try {
