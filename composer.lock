@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "821108cc683fa216d5c4ca17b6111f04",
-    "content-hash": "939cea3cab0f81ebb86b9c50213fa11f",
+    "hash": "a855b5d99f1c091ff45289638b9aa33b",
+    "content-hash": "751b80350a6d8141103c1033e79f1488",
     "packages": [
         {
             "name": "graylog2/gelf-php",
@@ -330,16 +330,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3sec/php-library-scraper-bing.git",
-                "reference": "79f5ee7b2aa97e6181ff419220dcdae22e6837c5"
+                "reference": "0f00603038f44dfa03fa3785c31d135d0fd2a0b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3sec/php-library-scraper-bing/zipball/79f5ee7b2aa97e6181ff419220dcdae22e6837c5",
-                "reference": "79f5ee7b2aa97e6181ff419220dcdae22e6837c5",
+                "url": "https://api.github.com/repos/t3sec/php-library-scraper-bing/zipball/0f00603038f44dfa03fa3785c31d135d0fd2a0b8",
+                "reference": "0f00603038f44dfa03fa3785c31d135d0fd2a0b8",
                 "shasum": ""
             },
             "require": {
-                "jwage/purl": "0.0.7"
+                "jwage/purl": "0.0.7",
+                "t3sec/urlhelper": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -366,7 +367,7 @@
                 "source": "https://github.com/t3sec/php-library-scraper-bing/tree/master",
                 "issues": "https://github.com/t3sec/php-library-scraper-bing/issues"
             },
-            "time": "2017-02-01 21:32:17"
+            "time": "2017-02-02 10:52:59"
         },
         {
             "name": "t3sec/urlhelper",
@@ -374,12 +375,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3sec/php-library-helper-url.git",
-                "reference": "300767e1b3415e8c95ca3e2bee542b65fafa0f33"
+                "reference": "ed8ba1aa8d0b2c1c9d42028ab1a3b067f3dcc18b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3sec/php-library-helper-url/zipball/300767e1b3415e8c95ca3e2bee542b65fafa0f33",
-                "reference": "300767e1b3415e8c95ca3e2bee542b65fafa0f33",
+                "url": "https://api.github.com/repos/t3sec/php-library-helper-url/zipball/ed8ba1aa8d0b2c1c9d42028ab1a3b067f3dcc18b",
+                "reference": "ed8ba1aa8d0b2c1c9d42028ab1a3b067f3dcc18b",
                 "shasum": ""
             },
             "type": "library",
@@ -408,30 +409,16 @@
                 "source": "https://github.com/t3sec/php-library-helper-url/tree/master",
                 "issues": "https://github.com/t3sec/php-library-helper-url/issues"
             },
-            "time": "2017-02-01 21:15:17"
+            "time": "2017-02-02 10:38:50"
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "0.0.1",
-            "alias_normalized": "0.0.1.0",
-            "version": "9999999-dev",
-            "package": "t3sec/urlhelper"
-        },
-        {
-            "alias": "0.0.1",
-            "alias_normalized": "0.0.1.0",
-            "version": "9999999-dev",
-            "package": "t3sec/bingscraper"
-        }
-    ],
-    "minimum-stability": "stable",
+    "aliases": [],
+    "minimum-stability": "dev",
     "stability-flags": {
-        "t3sec/urlhelper": 20,
         "t3sec/bingscraper": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

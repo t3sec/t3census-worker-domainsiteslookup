@@ -2,11 +2,12 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+use Gelf\Publisher;
+use Gelf\Transport\UdpTransport;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\GelfHandler;
-use Gelf\Publisher;
-use Gelf\Transport\UdpTransport;
+use T3sec\BingScraper\ScraperSearch;
 use T3sec\BingScraper\Exception\EmptyBodyException;
 
 
@@ -50,7 +51,7 @@ function fetchSites(GearmanJob $job) {
 	$logger->addDebug('Processing domain', array('domain' => $domain));
 
 	try {
-		$objLookup = new T3sec\BingScraper\ScraperSearch();
+		$objLookup = new ScraperSearch();
 		$objLookup->setEndpoint('http://www.bing.com/search')->setMaxResults(1000);
 		$results = $objLookup->setQuery('site:' . $domain)->getResults();
 		unset($objLookup);
@@ -59,7 +60,7 @@ function fetchSites(GearmanJob $job) {
 		$job->sendData(Logger::WARNING . ' ' . $e->getMessage());
 		$job->sendFail();
 		return;
-	} catch (Exception $e) {
+	} catch (\Exception $e) {
 		$logger->addError($e->getMessage(), array('errorcode' => $e->getCode(), 'domain' => $domain));
 		$job->sendData(Logger::ERROR . ' ' . $e->getMessage());
 		$job->sendException($e->getMessage());

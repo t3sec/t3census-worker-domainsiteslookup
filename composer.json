@@ -13,7 +13,13 @@
       "email": "marcus#exp2016@t3sec.info"
     }
   ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/t3sec/php-library-helper-url"
+    },
     {
       "type": "vcs",
       "url": "https://github.com/t3sec/php-library-scraper-bing"
@@ -23,6 +29,6 @@
     "necromant2005/gearman-stats": "1.2.1",
     "monolog/monolog": "^1.22",
     "graylog2/gelf-php": "^1.5",
-    "t3sec/bingscraper": "dev-master as 0.0.1"
+    "t3sec/bingscraper": "dev-master"
   }
 }
